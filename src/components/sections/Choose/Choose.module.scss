@@ -1,0 +1,37 @@
+.choose {
+	padding: 70rem 0;
+	@media (max-width: 768px) {
+		padding: 50rem 0;
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 20rem;
+		@media (max-width: 1025px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (max-width: 768px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	&__item {
+		background-color: #4f7fa8;
+		padding: 40rem 30rem;
+		color: var(--bg-color);
+		&-image {
+			width: 140rem;
+			height: 140rem;
+			margin: 0 auto;
+			margin-bottom: 40rem;
+
+			@media (max-width: 768px) {
+				margin-bottom: 30rem;
+			}
+		}
+		&-title {
+			font-size: 18rem;
+			font-weight: 700;
+			margin-bottom: 8rem;
+		}
+	}
+}

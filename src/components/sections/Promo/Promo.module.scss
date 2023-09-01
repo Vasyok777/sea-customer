@@ -1,0 +1,31 @@
+.promo {
+	position: relative;
+	padding: 281rem 0rem;
+	margin-top: -70rem;
+	@media (max-width: 768px) {
+		margin-top: -93rem;
+	}
+	&__bg {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+	}
+	&__title {
+		color: var(--White, #eff3ff);
+		text-align: center;
+		font-size: 48rem;
+		font-weight: 400;
+		text-transform: uppercase;
+		@media (max-width: 1025px) {
+			font-size: 42rem;
+		}
+		@media (max-width: 768px) {
+			font-size: 32rem;
+		}
+	}
+}

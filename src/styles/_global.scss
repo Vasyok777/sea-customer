@@ -1,0 +1,32 @@
+html {
+	font-size: calc(100vw / var(--desktop));
+	@media (max-width: 1025px) {
+		font-size: calc(100vw / var(--table));
+	}
+	@media (max-width: 768px) {
+		font-size: calc(100vw / var(--mobile));
+	}
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 14rem;
+	background-color: var(--bg-color);
+	color: var(--main-color);
+	overflow-x: hidden;
+	line-height: 1.3;
+}
+
+.container {
+	max-width: var(--container);
+	padding: 0 15rem;
+	margin: 0 auto;
+	@media (max-width: 768px) {
+		padding: 0 15rem;
+	}
+}
+body.lock {
+	overflow: hidden;
+}

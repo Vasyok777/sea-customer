@@ -1,0 +1,41 @@
+.services {
+	padding: 70rem 0;
+	@media (max-width: 768px) {
+		padding: 50rem 0;
+	}
+	&__inner {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20rem;
+		@media (max-width: 1025px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	&__item {
+		&-image {
+			width: 380rem;
+			height: 200rem;
+			margin-bottom: 15rem;
+			@media (max-width: 1025px) {
+				display: inline-block;
+				float: left;
+				margin-right: 10rem;
+				margin-bottom: 0;
+			}
+			@media (max-width: 768px) {
+				margin-bottom: 15rem;
+				width: 100%;
+			}
+			& img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		&-title {
+			font-size: 18rem;
+			font-weight: 700;
+			margin-bottom: 8rem;
+		}
+	}
+}

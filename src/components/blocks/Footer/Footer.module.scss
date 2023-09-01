@@ -1,0 +1,31 @@
+.footer {
+	background: rgba(0, 40, 79, 0.75);
+	color: var(--bg-color);
+	padding: 72rem 0 32rem;
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 72rem;
+		@media (max-width: 768px) {
+			flex-direction: column;
+			gap: 32rem;
+		}
+		&-center {
+			font-size: 12rem;
+		}
+		&-name {
+			margin-bottom: 10rem;
+		}
+	}
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media (max-width: 768px) {
+			font-size: 12rem;
+			text-align: center;
+			flex-direction: column-reverse;
+			gap: 20rem;
+		}
+	}
+}

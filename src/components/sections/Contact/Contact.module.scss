@@ -1,0 +1,17 @@
+.contact {
+	padding: 70rem 0;
+	@media (max-width: 768px) {
+		padding: 50rem 0;
+	}
+	&__content {
+		margin-bottom: 32rem;
+		&-title {
+			font-size: 18rem;
+			font-weight: 700;
+			margin-bottom: 8rem;
+		}
+		&-text {
+			max-width: 580rem;
+		}
+	}
+}
